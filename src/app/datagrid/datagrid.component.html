@@ -1,0 +1,12 @@
+<button  class="btn btn-success btn-small" (click)="goToAddPage()">New</button>
+<button  class="btn btn-success btn-small" (click)="goToEditPage()">Edit</button>
+<button  class="btn btn-danger btn-small" (click)="deleteItem()">Delete</button>
+
+<ag-grid-angular #agGrid
+    style="width: 605px;" 
+    class="ag-theme-balham"
+    [rowData]="gridData" 
+    [columnDefs]="columnDefs"
+    [pagination]="true"
+    [paginationPageSize]="5">
+</ag-grid-angular>
