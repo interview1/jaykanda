@@ -1,27 +1,28 @@
 # LuxoftTest
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.7.
+Make sure Node is installed with v10.15.1
+Make sure MongoDB v3.4 is installed.
+
+## Clone the Repo 
+`git clone https://github.com/jaykanda/luxoft-test.git`
+`cd luxoft-test`
+Run `ng serve --proxy-config proxy.conf.json`
+Open another git bash and run `node server` from the same location
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng serve --proxy-config proxy.conf.json` to start the Angular Lite Development server. (Proxy is configured as node server is being used at port 3000 to process the http api calls using Express JS)
+Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## To Start the node server
+Run `node server`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Mongo DB Set up
 
-## Build
+Install MongoDB Server v3.4
+Create local C:\data\db (Setting up the local db for mongod server)
+After installing the MongoDB Server, please go to C:\Program Files\MongoDB\Server\3.4\bin
+Run `mongod` and make sure the connection happens on the port 27017
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Thanks
